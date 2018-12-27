@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Formulario</title>
+<link href="estilos.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body style="border:0; margin:0; width: 100%;">
+
+	
+ 
+<!-- formulario de contacto externo a la tienda -->
+<div >
+	<h4>CONTACTO</h4>
+	<form action="envia.php" method="post" class="form-consulta"> 
+		<label for="nombre">Nombre y apellido: <span>*</span>
+			<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+		</label>
+		<label for="nEmpresa" style="text-decoration:underline;">Nombre Empresa: <span>*</span>
+			<input type="text" name="nEmpresa" placeholder="Nombre Empresa" class="campo-form" required>
+		</label><label for="dni" style="text-decoration:underline;">DNI o CIF: <span>*</span>
+			<input type="text" name="dni" placeholder="DNI o CIF" class="campo-form" required>
+		</label>
+		<label for="email">Email: <span>*</span>
+			<input type="email" name="email" placeholder="Email" class="campo-form" required>
+		</label>
+		<label for="telefono" style="text-decoration:underline;">Telefono: <span>*</span>
+			<input type="text" name="telefono" placeholder="Telefono" class="campo-form" required>
+		</label>
+		<p>*cambos obligatorios</p>
+		<label for="asunto">Asunto: <span>*</span>
+			<input type="text" name="asunto" placeholder="Asunto" class="campo-form" required>
+		</label>
+		<label for="consulta">Mensaje:
+			<textarea name="consulta" class="campo-form" required></textarea>
+		</label>
+		<input type="checkbox" name="condiciones" id="condiciones" required>he leido y acepto las politicas de privacidad
+<br>
+	<div style="text-align:center;" ><input type="submit" value="Enviar" class="btn-form"><a href="http://www.serprint.com/"></a></div>	
+	</form>
+</div>
+<!-- formulario -->
+
+</body>
+</html>
